@@ -1,0 +1,447 @@
+/*Tenkes Dekor Home*/
+
+/*---------------------------------*/
+/*------------ General ------------*/
+/*---------------------------------*/
+
+* {
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Helia-Book', sans-serif;
+	color: #282828;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.flex-container {
+	display: flex;
+}
+
+/*------------------------------------*/
+/*------------ Typography ------------*/
+/*------------------------------------*/
+
+@font-face {
+    font-family: Helia-Book;
+    src: url(../fonts/Helia-Book.otf);
+}
+
+@font-face {
+    font-family: Helia-Medium;
+    src: url(../fonts/Helia-Medium.otf);
+}
+
+@font-face {
+    font-family: Helia-MediumItalic;
+    src: url(../fonts/Helia-MediumItalic.otf);
+}
+
+@font-face {
+    font-family: ClanPro-WideBookItalic;
+    src: url(../fonts/ClanPro-WideBookItalic.otf);
+}
+
+@font-face {
+    font-family: ClanPro-NarrBold;
+    src: url(../fonts/ClanPro-NarrBold.otf);
+}
+
+@font-face {
+    font-family: Helia-BookItalic;
+    src: url(../fonts/Helia-BookItalic.otf);
+}
+
+
+/*------------------------------------*/
+/*------------ Navigation ------------*/
+/*------------------------------------*/
+
+#header {
+	background: #fff;
+}
+
+nav.top-nav {
+	height: 122px;
+	background: #fff;
+} 
+
+nav.flex-container {
+	align-items: center;
+	justify-content: space-between;
+	height: 122px;
+}
+
+.nav--logo {
+	opacity: 0.6;
+	transition: opacity .2s;
+	cursor: pointer;
+}
+
+.nav--logo:hover {
+	opacity: 1;
+}
+
+.primary-nav.flex-container {
+	align-items: center;
+}
+
+.primary-nav .nav-item {
+	margin: 0 12px;
+}
+
+.nav-item a {
+	color: #757372;
+	padding: 10px 0;
+	font-size: 15px;
+}
+
+.nav-item a.active,
+.nav-item a:hover {
+	color: #792b87;
+	border-bottom: 2px solid #792b87;
+}
+
+/*------------------------------*/
+/*------------ Home ------------*/
+/*------------------------------*/
+
+.home .panel {
+	margin: 0px 70px 10px;
+	height: 396px;
+	transition: background .1s;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.home a:last-child .panel {
+	margin-bottom: 0px;
+}
+
+.panel--shop__window {
+	background: url(../img/shop-window.jpg);
+}
+
+.panel--shop__window:hover {
+	background: url(../img/shop-window-active.jpg);
+}
+
+.panel--car__decor {
+	background: url(../img/car-decor.jpg);
+}
+
+.panel--car__decor:hover {
+	background: url(../img/car-decor-active.jpg);
+}
+
+.panel--print__decor {
+	width: 520px;
+	height: 396px;
+	background: url(../img/print-decor.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: background .1s;
+}
+
+.panel--print__decor:hover {
+	background: url(../img/print-decor-active.jpg);
+}
+
+.panel--wedding__decor {
+	width: 520px;
+	height: 396px;
+	background: url(../img/wedding-decor.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: background .1s;
+}
+
+.panel--wedding__decor:hover {
+	background: url(../img/wedding-decor-active.jpg);
+}
+
+.panel--poster__decor {
+	background: url(../img/poster-decor.jpg);
+}
+
+.panel--poster__decor:hover {
+	background: url(../img/poster-decor-active.jpg);
+}
+
+.panel--polo__decor {
+	background: url(../img/polo-decor.jpg);
+}
+
+.panel--polo__decor:hover {
+	background: url(../img/polo-decor-active.jpg);
+}
+
+.panel--news__decor {
+	background: url(../img/news-decor.jpg);
+}
+
+.panel--news__decor:hover {
+	background: url(../img/news-decor-active.jpg);
+}
+
+/*--------------------------------*/
+/*------------ Footer ------------*/
+/*--------------------------------*/
+
+.footer {
+	background: #fff;
+	padding: 20px 0;
+}
+
+.footer .container {
+	max-width: 1040px;
+}
+
+.footer h2 {
+	position: relative;
+	padding-left: 15px;
+	color: #792b87;
+	font-family: 'ClanPro-WideBookItalic';
+}
+
+.footer h2:before {
+	content: "";
+	background: #792b87;
+	position: absolute;
+	left: 0;
+	top: 5px;
+	display: inline-block;
+	width: 12px;
+	height: 20px;
+}
+
+.footer .flex-container {
+	justify-content: space-around;
+}
+
+.footer img {
+	height: auto;
+	align-self: flex-end;
+}
+
+/*Tenkes Dekor Kirakat*/
+
+/*--------------------------------*/
+/*------------ Main --------------*/
+/*--------------------------------*/
+
+.main {
+	background: url(../img/bg.png);
+	background-size: cover;
+	padding: 70px 0;
+	padding-bottom: 150px;
+	height: 100vh;
+}
+
+.main-image {
+	width: 60%;
+}
+
+.main-content {
+	width: 40%;
+}
+
+.main--title {
+	font-family: 'ClanPro-NarrBold', sans-serif;
+	font-size: 80px;
+	line-height: 1;
+	color: #ececec;
+	margin-top: 30px;
+}
+
+.main--sub-title {
+	font-family: 'ClanPro-WideBookItalic', sans-serif;
+	font-size: 24px;
+	display: block;
+	line-height: 1.4;
+	opacity: 1;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.title-divider {
+	width: 150px;
+	height: 2px;
+	background: #792b87;
+	border: 0;
+	box-shadow: none;
+}
+
+.main--pharagraph {
+	color: #757372;
+	margin: 20px 0;
+	padding-right: 90px;
+	text-align: justify;
+}
+
+.main--pharagraph strong {
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.main--pharagraph ul {
+	margin: 10px 0px 30px;
+	color: #757372;
+}
+
+.main--pharagraph ul li{
+	color: #757372;
+}
+
+.main--cta {
+	font-family: 'Helia-MediumItalic', sans-serif;
+	text-transform: uppercase;
+	color: #792b87;
+	display: block;
+}
+
+/*------------------------------------*/
+/*------------ Proposal --------------*/
+/*------------------------------------*/
+
+.proposal .container {
+	max-width: 1000px;
+}
+
+.proposal-content {
+	font-family: 'Helia-Book', sans-serif;
+	color: #757372;
+	padding: 15px 0;
+}
+
+.support-section {
+	background: url(../img/szechenyi-2020.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.print-images.flex-container {
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.print-image {
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+.box p {
+	padding: 0;
+	font-size: 13px;
+	padding-left: 12px;
+	border-left: 3px solid #792b87;
+}
+
+.proposal-tools h2 {
+	color: #757372;
+}
+
+.proposal-footer.flex-container {
+	justify-content: space-between;
+	padding-bottom: 70px;
+}
+
+.proposal-footer p {
+	padding: 0;
+}
+
+/*-----------------------------------*/
+/*------------ Contact --------------*/
+/*-----------------------------------*/
+
+.contact-form {
+	margin-top: 40px;
+	margin-left: 200px;
+}
+
+.form-field {
+	display: block;
+	width: 400px;
+	margin-bottom: 25px;
+	padding: 5px 12px;
+	font-family: 'Helia-BookItalic', sans-serif;
+	font-size: 15px;
+	color: #757372;
+	box-shadow: none;
+	border: 0;
+	outline: none;
+}
+
+.contact-form input[type="submit"] {
+	background: #792b87;
+	text-transform: uppercase;
+	font-family: 'Helia-Medium', sans-serif;
+	letter-spacing: 4px;
+	padding: 5px 25px;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	margin-right: 15px;
+}
+
+.submit-wrapper span {
+	color: #757372;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
